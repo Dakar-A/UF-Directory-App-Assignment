@@ -19,7 +19,7 @@ fs.readFile('listings.json', function(err, data){
   var listings = JSON.parse(data);
   listings.entries.forEach(function(listing){
     var listingInstance = new Listing(listing);
-    listingInstance.save(function(err)){
+    listingInstance.save(function(err){
       if(err)
         throw(err);
     });

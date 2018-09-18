@@ -36,7 +36,7 @@ var updatePhelpsLab = function() {
     Phelps Laboratory's address is incorrect. Find the listing, update it, and then 
     log the updated document to the console. 
    */
-  Listing.findOneAndUpdate({ name: 'Phelps Laboratory'}, { address: '1953 Museum Rd, Gainesville, FL 32603'} function(err, listing) {
+  Listing.findOneAndUpdate({ name: 'Phelps Laboratory'}, { address: '1953 Museum Rd, Gainesville, FL 32603'}, function(err, listing) {
     if(err) throw err;
 
     console.log(listing);
